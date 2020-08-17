@@ -1,0 +1,26 @@
+/* Wedit generated resource file */
+#ifdef __LCC__
+#include <windows.h>
+#endif
+
+#include "resource.h"
+
+IPCHECK_DLG DIALOG 105, 59, 135, 160
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_MINIMIZEBOX
+CAPTION "IpCheck(alpha debug)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "IP address", 101, 10, 10, 60, 10
+    EDITTEXT        IDC_DIP, 10, 25, 70, 10, ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DPORT, 90, 25, 30, 10, ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "Port (opt)", 102, 90, 10, 45, 10
+    LTEXT           "Type", 107, 50, 40, 30, 10
+    EDITTEXT        IDC_TYPE, 50, 55, 30, 10, ES_CENTER | ES_AUTOHSCROLL
+    LTEXT           "  Valid Type Value : \r\n  0=rand  1=uni_t  2=uni_u  3=uni_a \r\n  4=frag  5=ipopt  6=tcpopt  7=vlan+0\r\n  8=vlan+3  (Port=vlan_id for 7|8)\r\n  9=uni_i  (0-9)+50=same but not fake", 109, 10, 75, 115, 40,  NOT WS_GROUP
+    PUSHBUTTON      "Start", IDC_START, 45, 125, 40, 13 
+    CTEXT           "(C) Felix Zhou(zhz), 2004.", IDC_COPYRIGHT, 10, 145, 115, 10
+END
+
+IPCHECK_ICON ICON DISCARDABLE "ipcheck.ico"
+
+
